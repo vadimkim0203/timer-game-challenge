@@ -38,11 +38,11 @@ The goal is to stop the timer as close to the target time as possible without ex
    ```
 3. Install dependencies (if applicable):
    ```bash
-   npm install
+   npm install or npm i
    ```
 4. Start the game:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ---
