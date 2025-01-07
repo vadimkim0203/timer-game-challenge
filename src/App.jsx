@@ -7,10 +7,10 @@ function App() {
     <>
       <Player />
       <div id="challenges">
-        <TimerChallenge title="Easy" targetTime={1}/>
-        <TimerChallenge title="Not easy" targetTime={5}/>
-        <TimerChallenge title="Getting tough" targetTime={10}/>
-        <TimerChallenge title="Pros only" targetTime={15}/>
+        <TimerChallenge title="쉬움" targetTime={1}/>
+        <TimerChallenge title="쉽지 않음" targetTime={5}/>
+        <TimerChallenge title="점점 어려워짐" targetTime={10}/>
+        <TimerChallenge title="프로만 가능" targetTime={15}/>
 
 
       </div>

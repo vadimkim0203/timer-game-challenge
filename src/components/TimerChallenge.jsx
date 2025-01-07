@@ -9,7 +9,7 @@ export default function TimerChallenge({ title, targetTime }) {
 
   const timerIsActive = timeRemaining > 0 && timeRemaining < targetTime * 1000;
 
-  if(timeRemaining <= 0) {
+  if (timeRemaining <= 0) {
     clearInterval(timer.current);
     setTimeRemaining(targetTime * 1000);
     dialog.current.open();
@@ -19,7 +19,6 @@ export default function TimerChallenge({ title, targetTime }) {
     timer.current = setInterval(() => {
       setTimeRemaining((prevTimeRemaining) => prevTimeRemaining - 10);
     }, 10);
-
   }
 
   function handleStop() {
@@ -32,16 +31,14 @@ export default function TimerChallenge({ title, targetTime }) {
       <ResultModal ref={dialog} targetTime={targetTime} result="lost" />
       <section className="challenge">
         <h2>{title}</h2>
-        <p className="challenge-time">
-          {targetTime} second{targetTime > 1 ? "s" : ""}
-        </p>
+        <p className="challenge-time">{targetTime} 초</p>
         <p>
           <button onClick={timerIsActive ? handleStop : handleStart}>
-            {timerIsActive ? "Stop" : "Start"} Challenge
+            {timerIsActive ? "중지" : "시작"} 도전
           </button>
         </p>
         <p className={timerIsActive ? "active" : undefined}>
-          {timerIsActive ? "Time is running" : "Timer inactive"}
+          {timerIsActive ? "시간이 흐르고 있습니다" : "타이머 비활성화"}
         </p>
       </section>
     </>
