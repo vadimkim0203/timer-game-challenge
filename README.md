@@ -44,6 +44,10 @@ ReactJS로 제작된 간단한 게임으로, 타이밍 및 예측 능력을 테�
    ```bash
    npm run dev
    ```
+5. Or simply follow the link below and check the deployed project:
+   ```
+   https://timer-game-challenge.vercel.app/
+   ```
 
 ---
 
